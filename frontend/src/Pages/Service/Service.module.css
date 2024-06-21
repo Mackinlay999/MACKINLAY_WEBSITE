@@ -1,0 +1,116 @@
+.ServicePageContainer{
+    margin:10px 35px ;
+    padding-top: 10;
+
+}
+.Container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.hrLineOurServices{
+    width: 10vw;
+    height: 3px;
+    margin-left: 2%;
+    margin-top: -10px;
+    color:#0056b3;
+    background: #007bff;
+}
+.service {
+    padding: 20px 0;
+}
+.ServiceDescription{
+    color: grey;
+    margin: 10px;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 -15px;
+}
+
+.col-lg-3,
+.col-md-3 {
+    padding: 0 15px;
+    box-sizing: border-box;
+    flex: 0 0 25%;
+    max-width: 25%;
+    
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 20px;
+    padding: 10px 10px ;
+    box-shadow: 0 4px 8px grey;
+    height: 22rem;
+  }
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.cardtitle {
+    color:black;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px  5px;
+}
+
+.cardText {
+    font-size: 1rem;
+    color:  grey;
+    margin: 0 0 20px;
+    font-style: italic;
+}
+.demoButton{
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 30px;
+    background: #0504aa;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    position: sticky;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+

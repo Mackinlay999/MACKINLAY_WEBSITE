@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+    user-select: none !important;
+}
+
+.inputElement {
+    resize: none;
+}
+
+.swiper-button-next {
+    border: 1px solid red;
+}
+
+.__discoverPage {
+    margin: 3em;
+    overflow: hidden;
+}
+
+.__header {
+    background: rgb(230, 250, 255);
+    padding: 1em;
+}
+
+.__headerText {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 100;
+    padding-bottom: 10px;
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.__headerDesc {
+    margin: .5em 0;
+    font-size: 17px;
+}
+
+.__headerDesc,
+.__cardDescription,
+.__items {
+    color: rgb(100, 100, 100);
+}
+
+/* OUR INNOVATIONS -------- */
+.__innovations {
+    margin: 3em 0;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-evenly;
+}
+
+.__items {
+    font-size: 18px;
+    width: 18vw;
+    list-style: none;
+    color: #323237;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.__upcoming {
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+
+.__upcoming:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: white;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: rgb(47, 47, 47);
+    content: "Upcoming..";
+    transform: rotateX(90deg);
+}
+
+.__upcoming:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #323237;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: rgb(230, 250, 255);
+    transform: translateY(0) rotateX(0);
+}
+
+.__upcoming:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.__upcoming:hover:before {
+    opacity: 0;
+    transform: rotateX(90deg);
+}
+
+
+/*  don't know where it's applying ------ */
+.__container {
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/* ------ */
+
+.__card {
+    border: 1px solid rgb(185, 185, 185);
+    /* width: 400px; */
+    height: 380px;
+    cursor: pointer;
+    position: relative;
+    transition: 500ms ease;
+    overflow: hidden;
+}
+
+.__card:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+.__cardImg {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.__cardTitle {
+    margin-top: .5em;
+    font-weight: 600;
+}
+
+.__cardDescription {
+    margin-top: .5em;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.__cardTitle,
+.__cardDescription {
+    padding: 0 15px;
+}
+
+.__cardBtn {
+    border: 1px solid red;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -95px;
+    bottom: 10px;
+    background: transparent;
+    border: none;
+    color: #4834DF;
+    transition: 400ms ease;
+    font-weight: 600;
+}
+
+.__arrowIcon {
+    font-size: 22px;
+}
+
+.__card:hover .__cardBtn {
+    left: 15px;
+}
+
+.__demoBtn {
+    border: none;
+    padding: .4em 2em;
+    background-color: #002366;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Merriweather", serif;
+    font-size: 14px;
+    font-weight: 300;
+    position: absolute;
+    left: 50%;
+    bottom: 12%;
+    transform: translate(-50%);
+}
+
+
+/* Details Page ------------------------ */
+.__mainContainer {
+    background: rgb(230, 250, 255);
+    padding: 2em;
+}
+
+.__image {
+    height: 78vh;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-bottom: 2.5em;
+}
+
+.__askDemoBtn {
+    border: none;
+    padding: .6em 2em;
+    background-color: #002366;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 3em auto 0;
+    display: grid;
+    place-items: center;
+}
+
+
+/* Service Page ------------------------ */
+.ServicePageContainer {
+    padding-top: 10;
+}
+
+.ServiceDescription {
+    color: grey;
+    margin: 10px;
+}
+
+.container {
+    padding: 1em 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 200px;
+    background: #fff;
+    border: 1px solid #dde;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    flex-grow: 1;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.cardtitle {
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px 5px;
+}
+
+.cardText {
+    font-size: 12px;
+    color: grey;
+    padding: .5em;
+    font-style: italic;
+}
+
+.demoButton {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 30px;
+    background: #0504aa;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    position: sticky;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+/* Modal Page -------------- */
+.__modalPage {
+    padding: 1em 0;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='1000' preserveAspectRatio='none' viewBox='0 0 1440 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1259%26quot%3b)' fill='none'%3e%3crect width='1440' height='1000' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1260%26quot%3b)'%3e%3c/rect%3e%3cpath d='M726.804553538635 550.4761201636378L885.6080584532449 746.5821168304894 922.9105502054866 391.6726152490279z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M740 703.6 a223.34 223.34 0 1 0 446.68 0 a223.34 223.34 0 1 0 -446.68 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M576.95%2c168.211C605.158%2c167.631%2c635.974%2c165.455%2c651.38%2c141.818C667.931%2c116.424%2c664.947%2c83.038%2c649.438%2c56.994C634.289%2c31.555%2c606.554%2c17.284%2c576.95%2c16.827C546.467%2c16.356%2c516.611%2c28.825%2c500.478%2c54.694C483.394%2c82.088%2c478.98%2c118.218%2c497.018%2c144.994C513.632%2c169.657%2c547.219%2c168.823%2c576.95%2c168.211' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1251.4221477159438 256.1138950198647L1280.8987171072015 407.75769845868706 1432.5425205460238 378.28112906742933 1403.065951154766 226.637325628607z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M172.56751071229837 732.1112320642872L0.6048678830747463 805.1050432741398 73.59867909292738 977.0676861033635 245.56132192215102 904.0738748935107z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M800.2 347.03 a277.79 277.79 0 1 0 555.58 0 a277.79 277.79 0 1 0 -555.58 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M338.279%2c402.483C394.933%2c401.127%2c446.362%2c373.695%2c477.398%2c326.279C512.082%2c273.291%2c535.613%2c205.143%2c502.974%2c150.872C470.949%2c97.622%2c400.377%2c92.726%2c338.279%2c94.958C281.114%2c97.012%2c223.528%2c113.713%2c192.886%2c162.016C160.102%2c213.696%2c155.464%2c280.852%2c187.13%2c333.224C217.863%2c384.054%2c278.897%2c403.904%2c338.279%2c402.483' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M75.15873728562407 168.1072297705577L197.3966093453935 356.33704620664616 385.626425781482 234.09917414687675 263.3885537217126 45.869357710788265z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1259'%3e%3crect width='1440' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='92.36%25' y1='111%25' x2='7.64%25' y2='-11%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1260'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.__modalTitle {
+    color: white;
+    display: grid;
+    place-items: center;
+    margin-top: 2em;
+    font-weight: 900;
+}
+
+.__label {
+    color: whitesmoke;
+}
+
+.__modalForm {
+    width: 45em;
+    border-radius: 10px;
+    margin: 3em auto;
+    padding: 2em 4em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background: rgba(255, 255, 255, 0.211);
+    backdrop-filter: blur(5px);
+}
+
+.__modalContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.__modalBtn {
+    width: 200px;
+    margin: auto;
+}
+
+.__modalMsg {
+    width: 100%;
+}
+
+
+/* @media only screen and (max-device-width: 1440px) {
+    .__card {
+        width: 18vw;
+        height: 380px;
+        height: 48vh;
+    }
+} */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .__card {
+        height: 330px;
+        font-size: 12px;
+    }
+
+    .__cardImg {
+        height: 150px;
+    }
+
+    .__cardTitle {
+        font-size: 16px;
+    }
+
+    .__cardBtn {
+        left: -75px;
+    }
+
+    .__demoBtn {
+        font-size: 13px;
+        bottom: 12%;
+    }
+
+    .card {
+        width: 230px;
+    }
+
+    .__modalTitle {
+        padding: 0 2em;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width:330px) and (max-width:950px) {
+    .__discoverPage {
+        margin: 1em;
+    }
+
+    .row .card {
+        width: 300px;
+        margin: 3px;
+    }
+
+    .__demoBtn {
+        font-size: 12px;
+    }
+
+    .__mainContainer {
+        padding: 1em 2em;
+    }
+
+    .__image {
+        height: 50vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .__modalForm {
+        width: 90%;
+        padding: 3em;
+    }
+
+    .__modalTitle {
+        padding: 0 1em;
+    }
+
+    .__modalContainer {
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .__card {
+        width: 90vw;
+    }
+
+    .__image {
+        height: 40vh;
+    }
+
+    .__mainContainer {
+        padding: 0em;
+    }
+
+    .__modalContainer {
+        flex-direction: column;
+    }
+
+    .__demoBtn {
+        font-size: 14px;
+    }
+}

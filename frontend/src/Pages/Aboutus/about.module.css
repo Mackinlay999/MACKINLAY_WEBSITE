@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.aboutMain__Container {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100dvh;
+}
+
+.about_heroSection {
+  padding: 0em 2.5em;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heroSection__InfoBox {
+  height: 100%;
+  width: calc(100% - 475px);
+  padding: 1em 0em;
+}
+
+.heroSection__heading,
+.heroSection__Secondaryheading {
+  font-family: "Poetsen One", sans-serif;
+  color: #204356 !important;
+  font-weight: 400;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.heroSection__description {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-size: 17px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.__description__para {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.__description__para:nth-child(1) {
+  margin: 0;
+}
+
+.heroSection__posterBox {
+  width: 420px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.heroSection__poster {
+  width: 100%;
+}
+
+.about__missionSection {
+  width: 100%;
+  margin: 1em auto;
+  min-height: 250px;
+  padding: 0em 2.5em;
+}
+
+@media screen and (max-width: 1025px) {
+  .heroSection__heading,
+  .heroSection__Secondaryheading {
+    font-size: 22px;
+  }
+
+  .heroSection__description {
+    font-size: 16px;
+  }
+  .__description__para {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .heroSection__InfoBox {
+    width: 100%;
+  }
+
+  .heroSection__heading,
+  .heroSection__Secondaryheading {
+    font-size: 20px;
+  }
+
+  .heroSection__posterBox {
+    display: none;
+  }
+
+  .heroSection__description {
+    font-size: 15px;
+  }
+  .__description__para {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about_heroSection,
+  .about__missionSection {
+    padding: 0em 1em;
+  }
+
+  .heroSection__heading,
+  .heroSection__Secondaryheading {
+    font-size: 19px;
+  }
+
+  .heroSection__description {
+    font-size: 14px;
+  }
+  .__description__para {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heroSection__heading,
+  .heroSection__Secondaryheading {
+    font-size: 18px;
+  }
+
+  .heroSection__description {
+    font-size: 14px;
+  }
+  .__description__para {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .heroSection__description {
+    font-size: 13px;
+    text-align: left;
+  }
+  .__description__para {
+    font-size: 13px;
+  }
+  .heroSection__heading,
+  .heroSection__Secondaryheading {
+    font-size: 17px;
+  }
+}

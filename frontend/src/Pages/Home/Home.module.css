@@ -1,0 +1,363 @@
+@import "../../Font.css";
+.main_page_bg {
+  background-image: url("../../Assets/main_bg.jpeg");
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  object-fit: contain;
+  height: 700px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_page_title {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.main_page_cnt {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-size: 17px;
+  font-family: "Merriweather", serif;
+}
+.main_cntact_us {
+  padding: 15px;
+  font-family: "Merriweather", serif;
+  border: none;
+  border-radius: 3px;
+  margin-top: 50px !important;
+  text-align: center;
+  display: flex;
+  margin: 0px auto;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-size: 15px;
+  color: #002366;
+  font-weight: 700;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #002366;
+  }
+}
+.about_us_section {
+  padding: 50px;
+}
+.about_us_section_title {
+  text-align: center;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #204356;
+  margin-bottom: 30px;
+}
+
+.about_us_two {
+  margin-top: 30px;
+}
+.about_us_title {
+  font-family: "Poetsen One", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #204356;
+}
+.about_us_cnt {
+  margin-top: 10px;
+  font-family: "Merriweather", serif;
+  color: #000;
+  font-size: 15px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+.about_us_image_logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.second_part {
+  margin-top: 50px;
+  background-color: #f2f8ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.about_us_bold {
+  font-family: "Poetsen One", sans-serif;
+  font-size: 15px;
+  color: #002366;
+}
+.about_us_list {
+  margin-top: 10px;
+}
+.why_choose_logo_image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.why_choose_us {
+  padding: 50px;
+}
+.why_choose_box_title {
+  font-family: "Poetsen One", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #204356;
+}
+.why_choose_us_title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #204356;
+}
+.why_choose_box_cnt {
+  color: #000;
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+.why_choose_cart {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 15px;
+  border-radius: 5px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+.contact_asap {
+  padding: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.contact_asap_title {
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.main_cntact_us_ani {
+  width: 65%;
+  height: auto;
+  object-fit: contain;
+  display: flex;
+  margin: 0px auto;
+}
+.contact_asap_heading {
+  font-family: "Poetsen One", sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #002366;
+  word-spacing: 2px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+  .why_choose_box_title {
+    font-size: 16px;
+  }
+  .why_choose_box_cnt {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .about_us_section_title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .second_part {
+    margin-top: 20px;
+  }
+  .about_us_title {
+    font-size: 18px;
+  }
+  .about_us_cnt {
+    font-size: 14px;
+  }
+  .about_us_image_logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .why_choose_us {
+    padding: 0px 50px 50px 50px;
+  }
+  .why_choose_cart {
+    height: 475px;
+    margin-bottom: 20px;
+  }
+  .contact_asap_heading {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .contact_asap_title {
+    font-size: 14px;
+  }
+  .main_cntact_us_ani {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .about_us_section_title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .second_part {
+    margin-top: 20px;
+  }
+  .about_us_title {
+    font-size: 18px;
+  }
+  .about_us_cnt {
+    font-size: 14px;
+  }
+  .about_us_image_logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .why_choose_us {
+    padding: 0px 50px 50px 50px;
+  }
+  .why_choose_cart {
+    height: 450px;
+    margin-bottom: 20px;
+  }
+  .contact_asap_heading {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .contact_asap_title {
+    font-size: 14px;
+  }
+  .main_cntact_us_ani {
+    width: 90%;
+  }
+  .main_cntact_us {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .about_us_section_title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .second_part {
+    margin-top: 20px;
+  }
+  .about_us_title {
+    font-size: 18px;
+  }
+  .about_us_cnt {
+    font-size: 14px;
+  }
+  .about_us_image_logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .why_choose_us {
+    padding: 0px 50px 50px 50px;
+  }
+  .why_choose_cart {
+    height: 460px;
+    margin-bottom: 20px;
+  }
+  .contact_asap_heading {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .contact_asap_title {
+    font-size: 14px;
+  }
+  .main_cntact_us_ani {
+    width: 90%;
+  }
+  .main_cntact_us {
+    font-size: 13px;
+  }
+  .reverse_option {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 575px) {
+  .about_us_section {
+    padding: 0px;
+    margin-top: 20px;
+  }
+  .about_us_section_title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .second_part {
+    margin-top: 20px;
+  }
+  .about_us_title {
+    font-size: 18px;
+  }
+  .about_us_cnt {
+    font-size: 14px;
+  }
+  .about_us_image_logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .why_choose_us {
+    padding: 0px;
+  }
+  .why_choose_us_title {
+    margin-top: 20px;
+  }
+  .why_choose_cart {
+    height: 460px;
+    margin-bottom: 20px;
+  }
+  .contact_asap_heading {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .contact_asap_title {
+    font-size: 14px;
+  }
+  .main_cntact_us_ani {
+    width: 90%;
+  }
+  .main_cntact_us {
+    font-size: 13px;
+  }
+  .reverse_option {
+    flex-direction: column-reverse;
+  }
+  .contact_asap {
+    padding: 20px 0px 20px 0px;
+  }
+}
