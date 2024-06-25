@@ -38,8 +38,8 @@ const Career = () => {
   useEffect(() => {
     setLoading(true)
     axios
-      // .get("http://localhost:5995/api/get-jobs")
-      .get("https://mackinley-officialweb.onrender.com/api/get-jobs")
+      .get("http://localhost:5995/api/get-jobs")
+      // .get("https://mackinley-officialweb.onrender.com/api/get-jobs")
       .then((response) => {
         setLoading(false)
         setJobs(response.data);
@@ -152,10 +152,6 @@ const Career = () => {
 
   return (
     <div className={CareerStyle.__careerPage}>
-      {/* <div>
-        <Toaster />
-      </div> */}
-
       <h2 className={CareerStyle.__headerText} data-aos="fade-right" data-aos-duration="1000">Our Company Culture</h2>
       <div className={CareerStyle.__section} data-aos="fade-up" data-aos-duration="1000">
         <div>
@@ -291,9 +287,9 @@ const Career = () => {
         </p>
       </div>
 
-      {
+       {
         Isloading && <LogoLoader />
-      }
+      } 
       <div className={CareerStyle.career_container}>
         <h5>Explore job opportunities :</h5>
         <div className="container">

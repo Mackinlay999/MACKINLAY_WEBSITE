@@ -76,6 +76,10 @@ span {
     font-weight: 600;
 }
 
+.__careerDesc ul {
+    display: block;
+}
+
 ol li,
 ul li {
     line-height: 2;
@@ -142,7 +146,8 @@ ul li {
         height: 4vh;
         margin-right: 10px;
     }
-    .__careerDesc{
+
+    .__careerDesc {
         padding: 1em;
     }
 }

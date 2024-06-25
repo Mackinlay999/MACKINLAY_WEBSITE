@@ -36,24 +36,10 @@ const Discover = () => {
         </p>
       </header>
 
-      {/* <section className={`${discover.__innovations} ${discover.__header}`}>
-        <h2 className={discover.__headerText} data-aos="fade-right" data-aos-duration="1000">Our Innovations:</h2>
-        <ul data-aos="fade-up">
-          <li className={discover.__items}>HRConnect Pro</li>
-        </ul>
-        <h2 className={discover.__headerText} data-aos="fade-right" data-aos-duration="1000">Upcoming Innovations:</h2>
-        <ul data-aos="fade-up" data-aos-duration="1000">
-          <li className={discover.__items}>MediAI Connect</li>
-          <li className={discover.__items}>ConnectEra</li>
-          <li className={discover.__items}>Global Guardian</li>
-          <li className={discover.__items}>WorldSync</li>
-        </ul>
-      </section> */}
-
       <section className={`${discover.__innovations} ${discover.__header}`}>
         <h2 className={discover.__headerText} data-aos="fade-right" data-aos-duration="1000">Our Innovations:</h2>
         <ul data-aos="fade-up">
-          <li className={discover.__items}>HRConnect Pro</li>
+          <li className={`${discover.__items} ${discover.__completed}`} onClick={() => navigate('/discover/HRConnectPro')}>HRConnect Pro</li>
           <li className={`${discover.__items} ${discover.__upcoming}`}>MediAI Connect</li>
           <li className={`${discover.__items} ${discover.__upcoming}`}>ConnectEra</li>
           <li className={`${discover.__items} ${discover.__upcoming}`}>Global Guardian</li>
